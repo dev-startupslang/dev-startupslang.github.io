@@ -1,0 +1,485 @@
+@font-face {
+    font-family: 'Atozimple Thin Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Atozimple Thin Regular'), url('../font/Atozimple\ Thin.woff') format('woff');
+}
+
+@media only screen and (min-width:1366px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 100% !important;
+    }
+    .container,.container-lg, .container-md, .container-sm, .container-xl {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+}
+header.transparent {
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+}
+
+ul.social-links li {
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin: 23px 14px;
+    font-size: 20px;
+  
+}
+ul.social-links li a i {
+    color: #35ffe1;
+}
+img{
+    max-width: 100%;
+}
+.bg-video-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: black;
+  }
+  video {
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+    max-width: 100%;
+    transform: scaleY(-1);
+    position: relative;
+    top: -210px;
+  }
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(6,11,15,1) 0%, rgba(9,14,17,1) 100%);
+    z-index: 2;
+    opacity: 0.8;
+  }
+  .overlay-text {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+    max-width: 900px;
+    width: 100%;
+    height: 486px;
+  }
+  img.logo {
+    width: 290px;
+}
+.banner-text h1 {
+    font-size: 75px;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #32ffe0, #00f2f1, #00e4fc, #00d5ff, #25c4ff);
+    -webkit-background-clip: text;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 36px 0px 5px 0px;
+
+}
+.banner-text h2 {
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Atozimple Thin Regular'
+}
+
+.arrow-container {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+    z-index: 99999;
+  }
+  .arrow-container:hover {
+    cursor: pointer;
+  }
+  .arrow-container:hover .arrow {
+    top: 50%;
+  }
+  .arrow-container:hover .arrow:before {
+    transform: translate(-50%, -50%) rotateZ(-30deg);
+  }
+  .arrow-container:hover .arrow:after {
+    transform: translate(-50%, -50%) rotateZ(30deg);
+  }
+  
+  .arrow {
+    position: absolute;
+    left: 50%;
+    transition: all .4s ease;
+  }
+  .arrow:before, .arrow:after {
+    transition: all .4s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    transform-origin: bottom right;
+    width: 4px;
+    height: 50px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+    background: linear-gradient(-100deg, rgba(0,0,0,1) 0%, rgba(0,239,255,1) 100%);
+  }
+  .arrow:after {
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
+  .arrow:nth-child(1) {
+    opacity: 0.3;
+    top: 35%;
+  }
+  .arrow:nth-child(2) {
+    opacity: 0.6;
+    top: 55%;
+  }
+  .arrow:nth-child(3) {
+    opacity: 0.9;
+    top: 75%;
+  }
+  
+  section.what-we-do {
+    padding: 160px 0px 0px 0px;  
+    background: rgb(6,11,15);
+    background: linear-gradient(90deg, rgba(6,11,15,1) 0%, rgba(9,14,17,1) 100%);
+}
+
+
+  .section-heading{
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 100px;
+    color: #161a1d;
+    text-align: right;
+    margin-right: 37%;
+  }
+
+  h2.section-heading:after {
+    width: 33%;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 63px;
+    border-top: 2px solid white;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.sub-heading{
+    font-size: 76px;
+    color: #ffffff;
+    font-family: 'Avenir';
+    margin: 35px 0px 70px 0px;
+}
+.sub-heading span {
+    color: #00ffd8;
+}
+
+.text p {
+    font-size: 30px;
+    color: #cecece;
+    line-height: 45px;
+    margin: 0px 0px 35px 0px;
+}
+
+.text p span {
+    color: #00ffd9;
+}
+
+
+.wwd{
+    position: relative;
+}
+img.circle-image {
+    width: 500px;
+}
+
+.circle-steps {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.circle-steps ul li img {
+    width: 130px;
+}
+li.step-one {
+    margin: 0px 0px 0px 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 550px;
+    min-height: 220px;
+    align-items: center;
+}
+.step-one-text {
+    margin: 72px 0px 0px 150px;
+    position: relative;
+}
+.step-one-text h3 {
+    color: #ffffff;
+    font-size: 27px;
+    margin: 15px 0px;
+    font-weight: 600;
+}
+.step-one-text h3:before {
+    width: 90px;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: -111px;
+    height: 88px;
+    border-top: 2px solid white;
+    z-index: 12;
+    overflow: hidden;
+}
+.step-one-text p {
+    font-size: 14px;
+    color: #00ffd9;
+    line-height: 21px;
+}
+li.step-one.two {
+    margin: 0px 0px 0px 170px;
+}
+li.step-one.three {
+    margin: 46px 0px 0px 290px;
+}
+li.step-one.four {
+    margin: 69px 0px 0px 148px;
+}
+li.step-one.five {
+    margin: -18px 0px 0px -18px;
+}
+
+section.expertise {
+    padding: 160px 0px 0px 0px;
+    background: rgb(6,11,15);
+    background: linear-gradient(90deg, rgba(6,11,15,1) 0%, rgba(9,14,17,1) 100%);
+    position: relative;
+}
+.mapoverlay img {
+    position: absolute;
+    top: 255px;
+}
+h2.focus-heading {
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.section-heading-right {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 100px;
+    color: #161a1d;
+    text-align: left;
+    margin-left: 19%;
+}
+h2.section-heading-right:before {
+    width: 15%;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 63px;
+    border-top: 2px solid white;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mg-16{
+    margin-left: 17%;
+    position: relative;
+}
+h2.sub-heading span {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #32ffe0, #00f2f1, #00e4fc, #00d5ff, #25c4ff);
+    -webkit-background-clip: text;
+
+}
+.mapoverlay {
+    background: url(../img/Map.png);
+    position: absolute;
+    width: 100%;
+    height: 109%;
+    background-size: cover;
+    background-position: 27% 0%;
+    top: 239px;
+}
+
+
+
+.section-heading-right-three {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 100px;
+    color: #161a1d;
+    text-align: left;
+    margin-left: 19%;
+}
+h2.section-heading-right-three:before {
+    width: 15%;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 63px;
+    border-top: 2px solid white;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.chart {
+    background: url(../img/Charts.png);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    height: 1006px;
+    background-repeat: no-repeat;
+    background-position: -197px -130px;
+    z-index: 1;
+}
+
+
+
+.video{
+    background: rgb(7,11,15);
+background: linear-gradient(180deg, rgba(7,11,15,1) 0%, rgba(31,47,75,1) 50%, rgba(88,223,196,1) 100%);
+min-height: 2000px;
+position: relative;
+top: -423px;
+z-index: 0;
+}
+
+.line img {
+    max-width: 52%;
+}
+.line {
+    margin: 0px 85px;
+}
+.video-link img {
+    max-width: 1000px;
+}
+.video-link {
+    margin-top: -47px;
+    text-align: center;
+}
+.mar-top{
+    margin-top:150px
+}
+
+.price-box {
+    background-image: linear-gradient(to left top, #162237, #1a2c44, #1e3750, #21425d, #234d6a);
+    border-radius: 26px;
+    text-align: center;
+    min-height: 800px;
+    padding: 0px 52px;
+    position: relative;
+    width: 450px;
+    margin: 100px 0px;
+    box-shadow: 0px 0px 20px 0px black;
+    display: inline-block;
+}
+.mg-16 .price-box:nth-child(1) {
+    margin-right: 10%;
+}
+.mg-16 .price-box:nth-child(3) {
+    margin-right: 10%;
+}
+.logo-layer {
+    background: url(../img/price.png);
+    position: absolute;
+    width: 519.5px;
+    height: 100%;
+    background-size: contain;
+    top: -21px;
+    background-repeat: no-repeat;
+    left: -35px;
+    z-index: 1;
+}
+.time {
+    font-size: 70px;
+    color: #00ffde;
+    font-family: 'Avenir';
+}
+.duration {
+    font-size: 45px;
+    color: #0daea0;
+    margin: 36px 0px;
+}
+.price {
+    font-size: 81px;
+    color: #00ffde;
+}
+.price-button a {
+    background-image: linear-gradient(to right, #478eb2, #22aacb, #00c7dc, #00e3e2, #00ffde);
+    color: #ffffff;
+    font-size: 58px;
+    padding: 0px 29px;
+    border-radius: 22px;
+}
+.price-box-logo img {
+    max-width: 46%;
+    position: relative;
+    top: -83px;
+    z-index: 3;
+}
+
+.price-button {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.price {
+    font-size: 81px;
+    color: #00ffde;
+    position: absolute;
+    bottom: 97px;
+    left: 0;
+    right: 0;
+    font-family: 'Avenir';
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width:1367px) {
+
+    ul.steps-detail {
+        margin: 0px 29px;
+    }
+}
