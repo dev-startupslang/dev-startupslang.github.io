@@ -163,7 +163,7 @@ img{
   }
   
   section.what-we-do {
-    padding: 160px 0px 0px 0px;  
+    padding: 100px 0px 0px 0px;  
     background: rgb(6,11,15);
     background: linear-gradient(90deg, rgba(6,11,15,1) 0%, rgba(9,14,17,1) 100%);
 }
@@ -212,12 +212,23 @@ img{
     color: #00ffd9;
 }
 
-
-.wwd{
+.anim {
+    width: 100%;
     position: relative;
 }
+.wwd{
+    position: relative;
+    margin-top: 150px;
+    padding-bottom: 115px;
+}
 img.circle-image {
-    width: 500px;
+    width: 1200px;
+    left: -813px;
+    position: relative;
+    opacity: 0.5;
+    z-index: 6;
+    filter: drop-shadow(10px 10px 10px black);
+    visibility: hidden;
 }
 
 .circle-steps {
@@ -228,19 +239,87 @@ img.circle-image {
     left: 0;
     right: 0;
     margin: 0 auto;
+    z-index: 6;
+}
+.anim-layer-one{
+    position: absolute;
+    top: 13px;
+    height: auto;
+    left: -825px;
+    z-index: 4;
+    width: 1200px;
+}
+.anim-layer-one img {
+    filter: drop-shadow(2px 1px 10px black);
+    width: 1200px;
+}
+.anim-layer-two img {
+    filter: drop-shadow(2px 1px 10px black);
+    width: 1239px;
+}
+.anim-layer-three img {
+    filter: drop-shadow(2px 1px 10px black);
+    width: 1282px;
+}
+.top-layer {
+    position: absolute;
+    top: 6px;
+    width: 1200px;
+    height: auto;
+    left: -831px;
+    z-index: 5;
+}
+.top-layer img {
+    filter: brightness(0.5);
+    width: 1200px;
+}
+.anim-layer-two {
+    position: absolute;
+    top: -8px;
+    width: 1239px;
+    height: auto;
+    left: -842px;
+    z-index: 3;
 }
 
+.anim-layer-three{
+    position: absolute;
+    top: -31px;
+    width: 1284px;
+    height: auto;
+    left: -864px;
+    z-index: 2;
+}
+.anim-layer-four {
+    position: absolute;
+    top: -53px;
+    width: 1329px;
+    height: auto;
+    left: -888px;
+    z-index: 1;
+}
+.anim-layer-four img {
+    width: 1326px;
+}
 .circle-steps ul li img {
     width: 130px;
 }
-li.step-one {
-    margin: 0px 0px 0px 16px;
+.hidden{
+    visibility: hidden;
+}
+.step-one {
+    position: absolute;
+    top: 0;
+    max-width: 620px;
+    z-index: 99;
+    left: 143px;
     display: flex;
-    justify-content: flex-start;
     flex-direction: row;
-    width: 550px;
-    min-height: 220px;
-    align-items: center;
+    align-items: flex-end;
+    text-align: start;
+}
+.step-one img {
+    width: 23%;
 }
 .step-one-text {
     margin: 72px 0px 0px 150px;
@@ -256,9 +335,9 @@ li.step-one {
     width: 90px;
     content: "";
     position: absolute;
-    bottom: 3px;
-    left: -111px;
-    height: 88px;
+    bottom: 0px;
+    left: -113px;
+    height: 72px;
     border-top: 2px solid white;
     z-index: 12;
     overflow: hidden;
@@ -268,18 +347,83 @@ li.step-one {
     color: #00ffd9;
     line-height: 21px;
 }
-li.step-one.two {
-    margin: 0px 0px 0px 170px;
+
+
+.step-two {
+    position: absolute;
+    top: 202px;
+    max-width: 620px;
+    z-index: 99;
+    left: 283px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: start;
 }
-li.step-one.three {
-    margin: 46px 0px 0px 290px;
+.step-two img {
+    width: 23%;
 }
-li.step-one.four {
-    margin: 69px 0px 0px 148px;
+
+.step-three {
+    position: absolute;
+    top: 465px;
+    max-width: 620px;
+    z-index: 99;
+    left: 406px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: start;
 }
-li.step-one.five {
-    margin: -18px 0px 0px -18px;
+.step-three img {
+    width: 23%;
 }
+
+
+.step-four {
+    position: absolute;
+    top: 729px;
+    max-width: 620px;
+    z-index: 99;
+    left: 288px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: start;
+}
+.step-four img {
+    width: 23%;
+}
+
+.step-five {
+    position: absolute;
+    top: 966px;
+    max-width: 620px;
+    z-index: 99;
+    left: 131px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: start;
+}
+.step-five img {
+    width: 23%;
+}
+
+
+
+@media only screen and (max-width:1282px) {
+    .mg-16 .price-box:nth-child(1) {
+        margin-right: 4% !important;
+    }
+    .mg-16 .price-box:nth-child(3) {
+        margin-right: 4% !important;
+    }
+}
+
+
+
+
 
 section.expertise {
     padding: 160px 0px 0px 0px;
@@ -404,7 +548,16 @@ z-index: 0;
 .mar-top{
     margin-top:150px
 }
-
+ul.steps-detail {
+    position: absolute;
+    top: 0;
+    left: 162px;
+    width: 100%;
+    z-index: 99;
+}
+ul.steps-detail li img {
+    width: 20%;
+}
 .price-box {
     background-image: linear-gradient(to left top, #162237, #1a2c44, #1e3750, #21425d, #234d6a);
     border-radius: 26px;
