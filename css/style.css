@@ -565,37 +565,38 @@ ul.steps-detail li img {
     min-height: 800px;
     padding: 0px 52px;
     position: relative;
-    width: 450px;
+    width: 370px;
     margin: 100px 0px;
     box-shadow: 0px 0px 20px 0px black;
     display: inline-block;
 }
 .mg-16 .price-box:nth-child(1) {
-    margin-right: 10%;
+    margin-right: 18%;
 }
 .mg-16 .price-box:nth-child(3) {
-    margin-right: 10%;
+    margin-right: 18%;
 }
 .logo-layer {
     background: url(../img/price.png);
     position: absolute;
-    width: 519.5px;
+    width: 428.5px;
     height: 100%;
     background-size: contain;
-    top: -21px;
+    top: -17px;
     background-repeat: no-repeat;
-    left: -35px;
+    left: -28px;
     z-index: 1;
 }
 .time {
-    font-size: 70px;
+    font-size: 54px;
     color: #00ffde;
     font-family: 'Avenir';
 }
 .duration {
-    font-size: 45px;
+    font-size: 35px;
     color: #0daea0;
     margin: 36px 0px;
+    text-shadow: 0px 1px 6px black;
 }
 .price {
     font-size: 81px;
@@ -604,20 +605,20 @@ ul.steps-detail li img {
 .price-button a {
     background-image: linear-gradient(to right, #478eb2, #22aacb, #00c7dc, #00e3e2, #00ffde);
     color: #ffffff;
-    font-size: 58px;
+    font-size: 45px;
     padding: 0px 29px;
     border-radius: 22px;
 }
 .price-box-logo img {
-    max-width: 46%;
+    max-width: 79%;
     position: relative;
-    top: -83px;
+    top: -100px;
     z-index: 3;
 }
 
 .price-button {
     position: absolute;
-    bottom: -25px;
+    bottom: -22px;
     left: 0;
     right: 0;
     margin: 0 auto;
